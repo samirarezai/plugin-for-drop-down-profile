@@ -1,0 +1,220 @@
+@import "mixins";
+
+%nowrap {
+  overflow: hidden;
+  text-overflow: clip;
+  display: block;
+  white-space: nowrap;
+}
+
+/*==============style for icon pack ==============*/
+.profile [class^="icon-"], .profile [class*=" icon-"] {
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+body {
+  font-family: 'icomoon';
+  background-color: #999999;
+  position: relative;
+  margin: 0;
+  overflow-x: hidden;
+
+  .icon-header-responsive {
+    display: none;
+    width: 50px;
+    @include transition;
+    text-align: center;
+    margin-top: 60px;
+    background: #2bab99;
+    height: 40px;
+
+    transition: all .3s;
+
+    .profile-btn {
+      &:before {
+        color: #fff;
+      }
+    }
+
+    @include media($width-responsive) {
+      @include flex(row, nowrap, center, center);
+    }
+  }
+
+  .profile {
+    background: #2bab99;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 60px;
+    padding-bottom: 60px;
+    height: auto;
+    @include transition;
+    @include media($width-responsive) {
+      margin-top: 40px;
+      right: -300px;
+    }
+
+    .profile-header {
+      width: auto;
+      padding: 20px;
+      color: #fff;
+      cursor: pointer;
+      @include flex(row, nowrap, flex-start, center);
+      background: linear-gradient(to right, transparent, #000);
+      margin-bottom: 150px;
+      height: 50px;
+      @include transition;
+      @include media(992px) {
+        margin-bottom: 0;
+      }
+
+      .icon-header {
+        text-align: left;
+        width: 50px;
+        @include media($width-responsive) {
+          display: none;
+        }
+        transition: all .3s;
+
+        .profile-btn {
+          &:before {
+            color: #fff;
+          }
+        }
+      }
+
+      .info {
+        text-align: right;
+        width: 150px;
+        overflow: hidden;
+        text-overflow: clip;
+        @include transition;
+
+        .name {
+          width: inherit;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          font-weight: 500;
+          margin: 0;
+          @extend %nowrap;
+        }
+
+        .number {
+          font-size: .8rem;
+          line-height: 2rem;
+          margin: 0;
+          @extend %nowrap;
+        }
+      }
+    }
+
+    .profile-body {
+      position: relative;
+      right: 0;
+      padding: 20px 0;
+      @include transition;
+      width: 100%;
+      overflow: hidden;
+
+      .profile-wrapper {
+        padding: 0 20px;
+        border-top: 1px solid #23b2b9;
+        @include transition;
+        @include flex(row, nowrap, center, flex-start);
+        height: 44px;
+
+        .profile-link {
+          @include transition;
+          font-size: .8rem;
+          padding: 15px 0;
+          width: 150px;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+            @extend %nowrap;
+          }
+        }
+
+        .profile-icon {
+          text-align: right;
+          width: 50px;
+
+          .profile-btn {
+
+          }
+        }
+      }
+    }
+  }
+
+  /*=================click style jquery==============*/
+  .open-style {
+    @include media-min($width-responsive) {
+      transition: all .3s;
+      background-image: linear-gradient(to right, transparent, #000);
+
+
+      .profile-header {
+        padding: 20px 0;
+        @include transition;
+        background: transparent;
+
+        .icon-header {
+          text-align: center;
+        }
+
+        .info {
+          @include transition;
+          width: 0;
+          overflow: hidden;
+
+          .name {
+
+            text-overflow: clip;
+          }
+
+          .number {
+          }
+        }
+      }
+      .profile-body {
+        padding: 20px 0;
+        @include transition;
+
+        .profile-wrapper {
+          padding: 0;
+          border-top: 0px solid #23b2b9;
+
+          .profile-link {
+            @include transition;
+            width: 0;
+
+            a {
+            }
+          }
+
+          .profile-icon {
+            text-align: center;
+
+            .profile-btn {
+
+            }
+          }
+        }
+      }
+    }
+  }
+/*====================style for button responsive jquery==================*/
+  .style-responsive {
+    @include transition;
+    @include media($width-responsive) {
+      right: 0px;
+    }
+
+  }
+}

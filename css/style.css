@@ -1,0 +1,295 @@
+body .profile .profile-body .profile-wrapper .profile-link a, body .profile .profile-header .info .number, body .profile .profile-header .info .name {
+  overflow: hidden;
+  text-overflow: clip;
+  display: block;
+  white-space: nowrap;
+}
+
+/*==============style for icon pack ==============*/
+.profile [class^=icon-], .profile [class*=" icon-"] {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+body {
+  font-family: "icomoon";
+  background-color: #999999;
+  position: relative;
+  margin: 0;
+  overflow-x: hidden;
+  /*=================click style jquery==============*/
+  /*====================style for button responsive jquery==================*/
+}
+body .icon-header-responsive {
+  display: none;
+  width: 50px;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  text-align: center;
+  margin-top: 60px;
+  background: #2bab99;
+  height: 40px;
+  transition: all 0.3s;
+}
+body .icon-header-responsive .profile-btn:before {
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  body .icon-header-responsive {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+  }
+}
+body .profile {
+  background: #2bab99;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  height: auto;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+}
+@media screen and (max-width: 992px) {
+  body .profile {
+    margin-top: 40px;
+    right: -300px;
+  }
+}
+body .profile .profile-header {
+  width: auto;
+  padding: 20px;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  background: linear-gradient(to right, transparent, #000);
+  margin-bottom: 150px;
+  height: 50px;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+}
+@media screen and (max-width: 992px) {
+  body .profile .profile-header {
+    margin-bottom: 0;
+  }
+}
+body .profile .profile-header .icon-header {
+  text-align: left;
+  width: 50px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 992px) {
+  body .profile .profile-header .icon-header {
+    display: none;
+  }
+}
+body .profile .profile-header .icon-header .profile-btn:before {
+  color: #fff;
+}
+body .profile .profile-header .info {
+  text-align: right;
+  width: 150px;
+  overflow: hidden;
+  text-overflow: clip;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+}
+body .profile .profile-header .info .name {
+  width: inherit;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+body .profile .profile-header .info .number {
+  font-size: 0.8rem;
+  line-height: 2rem;
+  margin: 0;
+}
+body .profile .profile-body {
+  position: relative;
+  right: 0;
+  padding: 20px 0;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  width: 100%;
+  overflow: hidden;
+}
+body .profile .profile-body .profile-wrapper {
+  padding: 0 20px;
+  border-top: 1px solid #23b2b9;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  height: 44px;
+}
+body .profile .profile-body .profile-wrapper .profile-link {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  font-size: 0.8rem;
+  padding: 15px 0;
+  width: 150px;
+}
+body .profile .profile-body .profile-wrapper .profile-link a {
+  text-decoration: none;
+  color: #fff;
+}
+body .profile .profile-body .profile-wrapper .profile-icon {
+  text-align: right;
+  width: 50px;
+}
+@media screen and (min-width: 992px) {
+  body .open-style {
+    transition: all 0.3s;
+    background-image: linear-gradient(to right, transparent, #000);
+  }
+  body .open-style .profile-header {
+    padding: 20px 0;
+    -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    background: transparent;
+  }
+  body .open-style .profile-header .icon-header {
+    text-align: center;
+  }
+  body .open-style .profile-header .info {
+    -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    width: 0;
+    overflow: hidden;
+  }
+  body .open-style .profile-header .info .name {
+    text-overflow: clip;
+  }
+  body .open-style .profile-body {
+    padding: 20px 0;
+    -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  }
+  body .open-style .profile-body .profile-wrapper {
+    padding: 0;
+    border-top: 0px solid #23b2b9;
+  }
+  body .open-style .profile-body .profile-wrapper .profile-link {
+    -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+    width: 0;
+  }
+  body .open-style .profile-body .profile-wrapper .profile-icon {
+    text-align: center;
+  }
+}
+body .style-responsive {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0s, border 0.01s, margin 0s, background 0.3s;
+}
+@media screen and (max-width: 992px) {
+  body .style-responsive {
+    right: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
